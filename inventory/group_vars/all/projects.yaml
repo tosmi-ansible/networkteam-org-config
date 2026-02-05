@@ -1,0 +1,12 @@
+---
+controller_projects:
+  - name: 02 Example Project
+    scm_type: git
+    scm_url: "https://github.com/tosmi-ansible/{{ tenant_name }}-example-project.git"
+    scm_branch: main
+    scm_clean: true
+    credentials: 01 Tenant Github Token
+    description: Tenant1 Example Project
+    organization: Tenant-1
+    wait: true
+    update_project: true
