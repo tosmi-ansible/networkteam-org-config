@@ -19,3 +19,11 @@ controller_templates:
     verbosity: 2
     credentials:
       - "00-{{ tenant_name }}-dev-env-ssh-key"
+  - name: "f5-automation"
+    organization: "{{ tenant_name }}"
+    description: Prints Hello World
+    job_type: run
+    inventory: "00-{{ tenant_name }}-example-inventory"
+    project: "00-{{ tenant_name }}-example-project"
+    playbook: playbooks/hello-world.yaml
+    verbosity: 2
